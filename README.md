@@ -1,6 +1,8 @@
 # 6b6t Stats application
 > currently the app has no real name sorry :(
 
+[image.png]
+
 
 ## Installation
 
