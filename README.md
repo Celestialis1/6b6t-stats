@@ -1,7 +1,7 @@
 # 6b6t Stats application
 > currently the app has no real name sorry :(
 
-[image.png]
+![alt text](http://url/to/img.png)
 
 
 ## Installation
