@@ -1,10 +1,8 @@
 # 6b6t Stats application
 > currently the app has no real name sorry :(
 
-![First stage]([http://url/to/img.png](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image.png)
-
-
-## Installation
+![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image.png)
+# Installation
 
 Windows, Linux, mac-os:
 
