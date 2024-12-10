@@ -2,6 +2,8 @@
 > currently the app has no real name sorry :(
 
 ![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image.png)
+![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image2.png)
+![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image.png)
 # Installation
 
 Windows, Linux, mac-os:
