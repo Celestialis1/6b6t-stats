@@ -3,7 +3,7 @@
 
 ![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image.png)
 ![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image2.png)
-![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image.png)
+![First stage](https://raw.githubusercontent.com/Celestialis1/6b6t-stats/refs/heads/main/image3.png)
 # Installation
 
 Windows, Linux, mac-os:
