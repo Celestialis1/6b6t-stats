@@ -33,12 +33,12 @@ module.exports = {
             // Respond with the changelog
             await interaction.reply({
                 content: changelog,
-                ephemeral: true, // Only visible to the user who invoked the command
+                ephemeral: true,
             });
 
-            console.log('Changelog sent successfully'); // Confirm the response was sent
+            console.log('Changelog sent successfully');
         } catch (error) {
-            console.error('Error sending changelog:', error); // Log any errors that occur
+            console.error('Error sending changelog:', error);
             await interaction.reply({
                 content: 'There was an error processing your request.',
                 ephemeral: true,
