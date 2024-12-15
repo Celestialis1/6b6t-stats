@@ -30,7 +30,7 @@ module.exports = {
 
             console.log('Sending changelog to user'); // Debugging step to check if reply is reached
 
-            // Respond with the changelog
+            // Respond with the changelog please? please dont crash
             await interaction.reply({
                 content: changelog,
                 ephemeral: true,
