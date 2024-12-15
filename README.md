@@ -34,7 +34,7 @@ The GNU General Public License (GPL) Version 3 is a "copyleft" license. This mea
 ## How to Credit
 
 If you use or modify this software, you must give appropriate credit by:
-- Mentioning the original authors (e.g., "Original project by [Your Name/Organization]").
+- Mentioning the original authors (e.g., "Original project by [Celestialis/Vanguard]").
 - Including a copy of this `README.md` and the `LICENSE` file with your distribution.
 - Clearly noting any changes you have made.
 
