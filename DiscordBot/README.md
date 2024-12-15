@@ -3,10 +3,14 @@
 
 # Installation
 
+### install this please
+
 ```
 chalk
 figlet
 discord.js
+axios
+cheerio
 ```
 
 Windows, Linux, mac-os:
