@@ -1,18 +1,16 @@
 require('dotenv').config();
 const { Client, GatewayIntentBits, REST, Routes } = require('discord.js');
 const chalk = require('chalk');
-const figlet = require('figlet'); // ASCII art
+const figlet = require('figlet');
 const statsCommand = require('./commands/stats');
 const changelogsCommand = require('./commands/changelogs');
 const interactionCreateEvent = require('./events/interactionCreate');
 const readyEvent = require('./events/ready');
 
-// Configurations
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 const CLIENT_ID = process.env.CLIENT_ID;
 const GUILD_ID = process.env.GUILD_ID;
 
-// Initialize client
 const discordClient = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -22,10 +20,8 @@ const discordClient = new Client({
     ],
 });
 
-// Initialize REST API to register commands
 const rest = new REST({ version: '10' }).setToken(DISCORD_TOKEN);
 
-// Clear the console and display ASCII art
 console.clear();
 figlet('Vanguards 6b6t stats', (err, data) => {
     if (err) {
@@ -46,7 +42,7 @@ discordClient.once('ready', async () => {
     console.log(chalk.green('[INFO] Discord bot is online and ready!'));
     console.log(chalk.yellow(`[INFO] ${discordClient.user.tag} is now online.`));
 
-    // Set bot activity
+    // Set bot activity (had to keep this comment here i got hella confused)
     try {
         await discordClient.user.setPresence({
             activities: [
@@ -60,8 +56,7 @@ discordClient.once('ready', async () => {
     } catch (error) {
         console.error(chalk.red('| ❌ | Error setting bot presence:', error));
     }
-
-    // Define the commands to be registered
+    
     const commands = [
         {
             name: 'stats',
@@ -69,7 +64,7 @@ discordClient.once('ready', async () => {
             options: [
                 {
                     name: 'username',
-                    type: 3, // STRING type
+                    type: 3, // STRING type maybe?
                     description: 'Minecraft username',
                     required: true,
                 },
@@ -89,7 +84,6 @@ discordClient.once('ready', async () => {
         console.error(chalk.red('| ❌ | Failed to register commands:', error));
     }
 
-    // Final display after a short delay
     setTimeout(() => {
         console.clear();
         figlet('Vanguard Bot', (err, data) => {
@@ -113,6 +107,5 @@ discordClient.login(DISCORD_TOKEN).then(() => {
     console.error(chalk.red('| ❌ | Failed to log in:', error));
 });
 
-// Register events
 discordClient.on('interactionCreate', interactionCreateEvent.execute);
 discordClient.on('ready', readyEvent.execute);
