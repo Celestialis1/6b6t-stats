@@ -6,15 +6,13 @@ const createMovementEmbed = require('../embeds/movementStatsEmbed');
 const createBuildingEmbed = require('../embeds/buildingStatsEmbed');
 const changelogsCommand = require('../commands/changelogs');
 
-// Map to store user stats
 const userStatsMap = new Map();
 
 const hasEmbedPermissions = (interaction) => {
     if (!interaction.guild) {
-        // If the interaction is in DMs, no permission check is needed
         return true;
     }
-    const botMember = interaction.guild.members.me; // Fetch the bot's member object in the guild
+    const botMember = interaction.guild.members.me;
     return botMember.permissions.has(PermissionsBitField.Flags.EmbedLinks);
 };
 
