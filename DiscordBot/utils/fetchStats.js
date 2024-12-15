@@ -25,7 +25,6 @@ const fetchStats = async (username) => {
                     total: cleanedStatValues[2] || 'N/A',
                 };
 
-                // Extract kill/death stats for K/D calculation
                 if (statName === 'Kills') {
                     kills7d = parseInt(cleanedStatValues[0] || 0);
                     kills30d = parseInt(cleanedStatValues[1] || 0);
